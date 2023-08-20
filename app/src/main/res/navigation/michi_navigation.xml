@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/michi_navigation"
+    app:startDestination="@id/michiListFragment">
+
+    <fragment
+        android:id="@+id/michiFavoriteFragment"
+        android:name="com.campodonico.ec_final.view.fragments.MichiFavoriteFragment"
+        android:label="fragment_michi_favorite"
+        tools:layout="@layout/fragment_michi_favorite" >
+        <action
+            android:id="@+id/action_michiFavoriteFragment_to_michiDetailFragment"
+            app:destination="@id/michiDetailFragment"
+            app:popUpTo="@id/michiFavoriteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.campodonico.ec_final.view.fragments.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/michiListFragment"
+        android:name="com.campodonico.ec_final.view.fragments.MichiListFragment"
+        android:label="fragment_michi_list"
+        tools:layout="@layout/fragment_michi_list" >
+        <action
+            android:id="@+id/action_michiListFragment_to_michiDetailFragment"
+            app:destination="@id/michiDetailFragment"
+            app:popUpTo="@id/michiListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/michiDetailFragment"
+        android:name="com.campodonico.ec_final.view.fragments.MichiDetailFragment"
+        android:label="fragment_michi_detail"
+        tools:layout="@layout/fragment_michi_detail" >
+        <argument
+            android:name="michi"
+            app:argType="com.campodonico.ec_final.model.Michi" />
+    </fragment>
+    <fragment
+        android:id="@+id/fireBaseFragment"
+        android:name="com.campodonico.ec_final.view.fragments.FireBaseFragment"
+        android:label="fragment_fire_base"
+        tools:layout="@layout/fragment_fire_base" />
+</navigation>

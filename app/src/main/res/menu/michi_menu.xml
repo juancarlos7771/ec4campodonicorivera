@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@id/michiListFragment"
+        android:enabled="true"
+        android:icon="@drawable/gato_liam"
+        android:title="MichiStore"/>
+    <item
+        android:id="@id/michiFavoriteFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_favorite"
+        android:title="Favoritos"/>
+    <item
+        android:id="@id/fireBaseFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_firebase"
+        android:title="FireBase"/>
+    <item
+        android:id="@id/infoFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_info"
+        android:title="Informacion"/>
+</menu>
